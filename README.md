@@ -1,4 +1,4 @@
 ﻿# curso-em-video
-Repositório geral para exercícios e/ou anotações do Curso em Vídeo.
+General repository for "Curso em Vídeo" exercises.
 
-Website do curso: https://www.cursoemvideo.com
+Website: https://www.cursoemvideo.com
