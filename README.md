@@ -1,4 +1,4 @@
-﻿# python-3
+﻿# python3-curso-em-video
 Repositório geral para exercícios e/ou anotações do curso de Python 3.
 
 Website do curso: https://www.cursoemvideo.com
