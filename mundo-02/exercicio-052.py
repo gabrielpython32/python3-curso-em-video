@@ -6,7 +6,7 @@ lista = []
 print('''*********************************************
 * Verificador de divisores e números primos *
 *********************************************\n''')
-numero = int(input('Informe um número: '))
+numero = int(input('Informe um número: \n'))
 for divisor in range(1, numero + 1):
     if numero % divisor == 0:
         divisores += 1
