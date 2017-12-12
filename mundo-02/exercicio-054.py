@@ -17,4 +17,4 @@ for pessoa in range(1, qtd + 1):
     else:
         maioridade += 1
 print('\n{} pessoas são menores de idade.'.format(menoridade))
-print('{} pessoas são de maior idade.'.format(maioridade))
+print('{} pessoas são maiores de idade.'.format(maioridade))
