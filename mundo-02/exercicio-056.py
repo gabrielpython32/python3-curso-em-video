@@ -10,14 +10,15 @@ mediaidade = 0
 maioridadehomem = 0
 nomevelho = ''
 totmulher20 = 0
-listamulheres = []
+nomemulher = ''
+listamulher = []
 for p in range(1, 5):
     print('------ {}ª PESSOA ------'.format(p))
     nome = str(input('Nome: ')).strip()
     idade = int(input('Idade: '))
     sexo = str(input('Sexo [M/F]: ')).strip()
     somaidade += idade
-    if p == 1 and sexo in 'Mm':  # in Mm: para M ou m quando for digitado.
+    if p == 1 and sexo in 'Mm':  # in 'Mm': para M ou m quando for digitado.
         maioridadehomem = idade
         nomevelho = nome
     if sexo in 'Mm' and idade > maioridadehomem:
@@ -25,8 +26,17 @@ for p in range(1, 5):
         nomevelho = nome
     if sexo in 'Ff' and idade < 20:
         totmulher20 += 1
-        listamulheres.append(nome)
+        listamulher.append(nome)
 mediaidade = somaidade / 4
 print('\nA média de idade do grupo é de {} anos.'.format(mediaidade))
-print('O homem mais velho tem {} anos e se chama {}.'.format(maioridadehomem, nomevelho))
-print('Ao todo são {} mulheres com menos de 20 anos e seus nomes são: {}'.format(totmulher20, listamulheres))
+if nomevelho == '':
+    print('Não há ninguém do sexo masculino.')
+else:
+    print('O homem mais velho tem {} anos e se chama {}.'.format(maioridadehomem, nomevelho))
+if totmulher20 == 0:
+    print('Não há ninguem abaixo dos 20 anos do sexo feminino.')
+elif totmulher20 == 1:
+    print('Ao todo só há uma mulher e seu nome é {}.'.format(nomemulher))
+else:
+    listamulher.append(nome)
+    print('Ao todo são {} mulheres e seus nomes são {}'.format(totmulher20, listamulher))
