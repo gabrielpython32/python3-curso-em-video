@@ -36,7 +36,7 @@ else:
 if totmulher20 == 0:
     print('Não há ninguem abaixo dos 20 anos do sexo feminino.')
 elif totmulher20 == 1:
-    print('Ao todo só há uma mulher e seu nome é {}.'.format(nomemulher))
+    print('Ao todo só há uma mulher abaixo dos 20 anos e seu nome é {}.'.format(nomemulher))
 else:
     listamulher.append(nome)
     print('Ao todo são {} mulheres e seus nomes são {}'.format(totmulher20, listamulher))
