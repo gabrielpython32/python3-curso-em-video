@@ -36,6 +36,8 @@ while sair == 'n':
     elif menu == 3:
         if n1 > n2:
             print('O maior número é {}.'.format(n1))
+        elif n1 == n2:
+            print('Os números {} e {} são iguais.'.format(n1, n2))
         else:
             print('O maior número é {}.'.format(n2))
 
