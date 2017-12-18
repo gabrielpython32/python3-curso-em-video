@@ -16,7 +16,7 @@ print('\nO resultado da progressão de {} com razão {} e com {} elementos é:\n
 print('{} ->'.format(n1), end=' ')
 
 while nn != 0:
-    nn = nn + cont - 1
+    nn += cont - 1
     while cont <= nn:
         cont += 1
         n1 += rz
